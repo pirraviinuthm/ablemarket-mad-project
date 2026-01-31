@@ -1,0 +1,42 @@
+name: able_market
+description: "An e-commerce app for PPKI community"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_sign_in: ^6.1.0
+  # Add your Firebase dependencies here:
+  firebase_core: ^3.6.0       # Required for Firebase to work
+  firebase_auth: ^5.3.1       # Required for Login/Signup
+  cloud_firestore: ^5.4.4     # Required for the User Database
+  firebase_storage: ^12.0.0  # For cloud storage
+  image_picker: ^1.0.7
+  intl: ^0.20.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+# Add this:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Add this section:
+  assets:
+    - assets/location.png
+    - assets/logo.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21 # Support newer Android adaptive icons

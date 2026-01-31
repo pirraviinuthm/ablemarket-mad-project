@@ -1,0 +1,29 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # Treat missing required parameters as a warning (not an error)
+    missing_required_param: warning
+    # Treat missing return as a warning
+    missing_return: warning
+    # Treat undefined class as an error
+    undefined_class: error
+    # Treat undefined identifier as an error
+    undefined_identifier: error
+
+linter:
+  rules:
+    # Good practices
+    avoid_empty_else: true
+    avoid_print: false  # Allow print for debugging during presentation
+    curly_braces_in_flow_control_structures: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_fields: true
+    prefer_final_locals: true
+    
+    # Style rules
+    file_names: false
+    library_names: false
+    constant_identifier_names: false
+    camel_case_types: true
